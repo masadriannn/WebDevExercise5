@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Menghitung</title>
+</head>
+<body>
+    
+    <h2>Web Menghitung Hitung</h2>
+    <table border="1px solid">
+        <tr>
+            <th><button type="button" onclick="tambah(2)">Tambah 2</button></th>
+            <th><button type="button" onclick="tambah(4)">Tambah 4</button></th>
+            <th><button type="button" onclick="kurang(2)">Kurang 2</button></th>
+            <th><button type="button" onclick="kurang(4)">Kurang 4</button></th>
+        </tr>
+        <tr>
+            <td colspan="4" id="nilai" style="text-align: center;">100</td>
+        </tr>
+    </table>
+    <script>
+        function tambah(nilai) {
+            var hasil = Number(document.getElementById("nilai").innerHTML)
+            hasil = hasil + nilai
+            document.getElementById("nilai").innerHTML = hasil
+        }
+        function kurang(nilai) {
+            var hasil = document.getElementById("nilai").innerHTML;
+            hasil = hasil - nilai
+            document.getElementById("nilai").innerHTML = hasil
+        }
+    </script>
+</body>
+</html>

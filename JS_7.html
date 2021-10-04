@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama-Nama Cowok Keren</title>
+</head>
+<body>
+   <h2>Nama-Nama Cowok Keren</h2>
+   <button type="button" onclick="showGanteng()">Tampilkan</button>
+   <h4 id="txt1"></h4>
+   <br>
+   <h3 id="txt2"></h3>
+   <br>
+   <h2 id="txt3"></h4>
+    <br>
+    <h1 id="txt4"></h1>
+    <script>
+        var n = 1
+        function showGanteng () {
+            if (n === 1 || n === 4){
+                document.getElementById("txt1").innerHTML = "NoFa"
+                document.getElementById("txt2").innerHTML = ""
+                document.getElementById("txt3").innerHTML = ""
+                document.getElementById("txt4").innerHTML = ""
+            } else if (n === 2 || n === 5){
+                document.getElementById("txt1").innerHTML = ""
+                document.getElementById("txt2").innerHTML = "Falih"
+                document.getElementById("txt3").innerHTML = ""
+                document.getElementById("txt4").innerHTML = ""
+            } else if (n === 3 || n === 6){
+                document.getElementById("txt1").innerHTML = ""
+                document.getElementById("txt2").innerHTML = ""
+                document.getElementById("txt3").innerHTML = "Steven"
+                document.getElementById("txt4").innerHTML = ""
+            } if (n === 7){
+                document.getElementById("txt1").innerHTML = ""
+                document.getElementById("txt2").innerHTML = ""
+                document.getElementById("txt3").innerHTML = ""
+                document.getElementById("txt4").innerHTML = "Gerard"
+                n = 0;
+            }
+            n++;
+        }
+    </script>
+
+</body>
+</html>
